@@ -17,7 +17,11 @@ class AppColor {
   static const Color blue = Color(0xFF108EE9);
   static const Color red = Color(0xFFEE4E2C);
   static const Color green = Color(0xFF28CD41);
+<<<<<<< Updated upstream
   static const Color vividGamboge = Color(0xFFFF9500);
+=======
+  static const Color blue = Color(0xFF108EE9);
+>>>>>>> Stashed changes
 }
 
 class AppText {

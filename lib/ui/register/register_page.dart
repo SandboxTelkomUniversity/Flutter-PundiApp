@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animator/flutter_animator.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:pundi_apps/shared/theme.dart';
 
 class RegisterPage extends StatelessWidget {

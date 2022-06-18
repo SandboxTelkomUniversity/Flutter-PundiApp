@@ -29,11 +29,185 @@ class WalletPage extends StatelessWidget {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: SvgPicture.asset(
-                'assets/vector/ic_plus.svg',
-                height: 27,
+            InkWell(
+              onTap: () {
+                showModalBottomSheet(
+                    backgroundColor: Colors.transparent,
+                    context: context,
+                    builder: (context) {
+                      return Container(
+                        height: 400,
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.vertical(top: Radius.circular(20)),
+                            color: AppColor.white),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 12),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Center(
+                                child: Container(
+                                  width: 55,
+                                  height: 6,
+                                  decoration: BoxDecoration(
+                                    color: AppColor.orange,
+                                    borderRadius: BorderRadius.circular(26),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 28),
+                              Text(
+                                'Tambah Dompet Digital',
+                                style: AppText.textMedium.copyWith(
+                                  fontWeight: AppText.semiBold,
+                                  fontSize: 14,
+                                  color: AppColor.black,
+                                ),
+                              ),
+                              SizedBox(height: 28),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        'assets/bitmap/gopay_icon.png',
+                                        width: 24,
+                                      ),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text(
+                                        'GoPay',
+                                        style: AppText.textMedium.copyWith(
+                                          fontWeight: AppText.semiBold,
+                                          fontSize: 14,
+                                          color: AppColor.black,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right_rounded,
+                                    color: AppColor.orange,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        'assets/bitmap/ovo_icon.png',
+                                        width: 24,
+                                      ),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text(
+                                        'OVO',
+                                        style: AppText.textMedium.copyWith(
+                                          fontWeight: AppText.semiBold,
+                                          fontSize: 14,
+                                          color: AppColor.black,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right_rounded,
+                                    color: AppColor.orange,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        'assets/bitmap/dana_icon.png',
+                                        width: 24,
+                                      ),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text(
+                                        'Dana',
+                                        style: AppText.textMedium.copyWith(
+                                          fontWeight: AppText.semiBold,
+                                          fontSize: 14,
+                                          color: AppColor.black,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right_rounded,
+                                    color: AppColor.orange,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        'assets/bitmap/spay_icon.png',
+                                        width: 24,
+                                      ),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text(
+                                        'Shoope Pay',
+                                        style: AppText.textMedium.copyWith(
+                                          fontWeight: AppText.semiBold,
+                                          fontSize: 14,
+                                          color: AppColor.black,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right_rounded,
+                                    color: AppColor.orange,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    });
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(right: 20),
+                child: SvgPicture.asset(
+                  'assets/vector/ic_plus.svg',
+                  height: 27,
+                ),
               ),
             )
           ],
@@ -84,10 +258,126 @@ class WalletPage extends StatelessWidget {
                           color: AppColor.black.withOpacity(0.7),
                         ),
                       ),
-                      Icon(
-                        Icons.more_vert,
-                        color: AppColor.black.withOpacity(0.5),
-                        size: 20,
+                      InkWell(
+                        onTap: () {
+                          showModalBottomSheet(
+                              backgroundColor: Colors.transparent,
+                              context: context,
+                              builder: (context) {
+                                return Container(
+                                  height: 300,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.vertical(
+                                          top: Radius.circular(20)),
+                                      color: AppColor.white),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 20, vertical: 12),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Center(
+                                          child: Container(
+                                            width: 55,
+                                            height: 6,
+                                            decoration: BoxDecoration(
+                                              color: AppColor.orange,
+                                              borderRadius:
+                                                  BorderRadius.circular(26),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(height: 28),
+                                        Text(
+                                          'Pengaturan',
+                                          style: AppText.textMedium.copyWith(
+                                            fontWeight: AppText.semiBold,
+                                            fontSize: 14,
+                                            color: AppColor.black,
+                                          ),
+                                        ),
+                                        SizedBox(height: 28),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Image.asset(
+                                                  'assets/bitmap/open_icon.png',
+                                                  height: 24,
+                                                ),
+                                                SizedBox(
+                                                  width: 12,
+                                                ),
+                                                Text(
+                                                  'Buka GoPay',
+                                                  style: AppText.textMedium
+                                                      .copyWith(
+                                                    fontWeight:
+                                                        AppText.semiBold,
+                                                    fontSize: 14,
+                                                    color: AppColor.black,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                            Icon(
+                                              Icons
+                                                  .keyboard_arrow_right_rounded,
+                                              color: AppColor.orange,
+                                              size: 40,
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 20,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Image.asset(
+                                                  'assets/bitmap/delete_icon.png',
+                                                  height: 24,
+                                                ),
+                                                SizedBox(
+                                                  width: 12,
+                                                ),
+                                                Text(
+                                                  'Hapus Dompet Digital',
+                                                  style: AppText.textMedium
+                                                      .copyWith(
+                                                    fontWeight:
+                                                        AppText.semiBold,
+                                                    fontSize: 14,
+                                                    color: AppColor.black,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                            Icon(
+                                              Icons
+                                                  .keyboard_arrow_right_rounded,
+                                              color: AppColor.orange,
+                                              size: 40,
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                );
+                              });
+                        },
+                        child: Icon(
+                          Icons.more_vert,
+                          color: AppColor.black.withOpacity(0.5),
+                          size: 20,
+                        ),
                       ),
                     ],
                   )

@@ -137,7 +137,7 @@ class HomePage extends StatelessWidget {
                                           child: Row(
                                             children: [
                                               Image.asset(
-                                                'assets/bitmap/gopay_icon.png',
+                                                'assets/bitmap/icon_gopay.png',
                                                 height: 24,
                                               ),
                                               SizedBox(
@@ -171,7 +171,7 @@ class HomePage extends StatelessWidget {
                                           child: Row(
                                             children: [
                                               Image.asset(
-                                                'assets/bitmap/ovo_icon.png',
+                                                'assets/bitmap/icon_ovo.png',
                                                 height: 24,
                                               ),
                                               SizedBox(
@@ -206,7 +206,7 @@ class HomePage extends StatelessWidget {
                                           child: Row(
                                             children: [
                                               Image.asset(
-                                                'assets/bitmap/dana_icon.png',
+                                                'assets/bitmap/icon_dana.png',
                                                 height: 24,
                                               ),
                                               SizedBox(
@@ -240,7 +240,7 @@ class HomePage extends StatelessWidget {
                                           child: Row(
                                             children: [
                                               Image.asset(
-                                                'assets/bitmap/spay_icon.png',
+                                                'assets/bitmap/icon_spay.png',
                                                 height: 24,
                                               ),
                                               SizedBox(

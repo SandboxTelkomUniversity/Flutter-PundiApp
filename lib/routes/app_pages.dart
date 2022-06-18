@@ -1,28 +1,59 @@
 import 'package:get/get.dart';
-<<<<<<< Updated upstream
-=======
 import 'package:pundi_apps/ui/wallet/dana_page.dart';
 import 'package:pundi_apps/ui/wallet/wallet_page.dart';
->>>>>>> Stashed changes
+import 'package:pundi_apps/ui/activity/activity_page.dart';
+import 'package:pundi_apps/ui/home/home_page.dart';
+import 'package:pundi_apps/ui/login/login_page.dart';
+import 'package:pundi_apps/ui/onboarding/onboarding_page.dart';
+import 'package:pundi_apps/ui/profile/profile_page.dart';
+import 'package:pundi_apps/ui/register/register_page.dart';
+import 'package:pundi_apps/ui/splashscreen/splash_screen_page.dart';
+import 'package:pundi_apps/ui/wallet/wallet_page.dart';
 
 import '../ui/main/main_page.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
-<<<<<<< Updated upstream
-  static const initial = Routes.main;
-=======
-  static const initial = Routes.dana;
->>>>>>> Stashed changes
+  static const initial = Routes.splash;
 
   static final routes = [
     GetPage(
-      name: Routes.main,
-      page: () => const MainPage(),
+      name: Routes.splash,
+      page: () => const SplashScreenPage(),
     ),
-<<<<<<< Updated upstream
-=======
+    GetPage(
+      name: Routes.main,
+      page: () => MainPage(),
+    ),
+    GetPage(
+      name: Routes.onboarding,
+      page: () => const OnboardingPage(),
+    ),
+    GetPage(
+      name: Routes.login,
+      page: () => const LoginPage(),
+    ),
+    GetPage(
+      name: Routes.register,
+      page: () => const RegisterPage(),
+    ),
+    GetPage(
+      name: Routes.home,
+      page: () => const HomePage(),
+    ),
+    GetPage(
+      name: Routes.activity,
+      page: () => const ActivityPage(),
+    ),
+    GetPage(
+      name: Routes.wallet,
+      page: () => const WalletPage(),
+    ),
+    GetPage(
+      name: Routes.profile,
+      page: () => const ProfilePage(),
+    ),
     GetPage(
       name: Routes.wallet,
       page: () => const WalletPage(),
@@ -31,6 +62,5 @@ class AppPages {
       name: Routes.dana,
       page: () => const DanaPage(),
     ),
->>>>>>> Stashed changes
   ];
 }

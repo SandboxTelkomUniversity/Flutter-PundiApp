@@ -35,27 +35,32 @@ class AppText {
   // usage: Text("App", style: AppText.textNormal)
   static const TextStyle textExtraSmall = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 8,
+    fontSize: 10,
   );
+
   static const TextStyle textSmall = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 10,
+    fontSize: 12,
   );
   static const TextStyle textNormal = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 13,
+    fontSize: 14,
   );
   static const TextStyle textMedium = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 15,
+    fontSize: 16,
   );
-  static const TextStyle textSemiLarge = TextStyle(
+  static const TextStyle textSemiMedium = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 18,
+    fontSize: 20,
   );
   static const TextStyle textLarge = TextStyle(
     fontFamily: fontFamily,
     fontSize: 24,
+  );
+  static const TextStyle textExtraLarge = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 32,
   );
   static const TextStyle textCustom = TextStyle(
     fontFamily: fontFamily,

@@ -10,4 +10,5 @@ abstract class Routes {
   static const String activity = '/activity';
   static const String profile = '/profile';
   static const String wallet = '/wallet';
+  static const String dana = '/dana';
 }

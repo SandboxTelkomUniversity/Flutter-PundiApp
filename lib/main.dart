@@ -10,7 +10,7 @@ void main() {
       systemNavigationBarColor: Colors.black, // navigation bar color
       statusBarColor: Colors.transparent, // status bar
       statusBarIconBrightness: Brightness.dark // color
-  ));
+      ));
   runApp(const PundiApp());
 }
 

@@ -1,11 +1,12 @@
 import 'package:get/get.dart';
-import 'package:pundi_apps/ui/profile/profile_page.dart';
 import 'package:pundi_apps/ui/activity/activity_page.dart';
 import 'package:pundi_apps/ui/home/home_page.dart';
 import 'package:pundi_apps/ui/login/login_page.dart';
 import 'package:pundi_apps/ui/onboarding/onboarding_page.dart';
+import 'package:pundi_apps/ui/profile/profile_page.dart';
 import 'package:pundi_apps/ui/register/register_page.dart';
 import 'package:pundi_apps/ui/splashscreen/splash_screen_page.dart';
+import 'package:pundi_apps/ui/wallet/wallet_page.dart';
 
 import '../ui/main/main_page.dart';
 
@@ -31,7 +32,7 @@ class AppPages {
       name: Routes.login,
       page: () => const LoginPage(),
     ),
-     GetPage(
+    GetPage(
       name: Routes.register,
       page: () => const RegisterPage(),
     ),
@@ -39,9 +40,13 @@ class AppPages {
       name: Routes.home,
       page: () => const HomePage(),
     ),
-     GetPage(
+    GetPage(
       name: Routes.activity,
       page: () => const ActivityPage(),
+    ),
+    GetPage(
+      name: Routes.wallet,
+      page: () => const WalletPage(),
     ),
     GetPage(
       name: Routes.profile,

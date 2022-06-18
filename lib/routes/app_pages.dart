@@ -20,7 +20,7 @@ class AppPages {
     ),
     GetPage(
       name: Routes.main,
-      page: () => const MainPage(),
+      page: () => MainPage(),
     ),
     GetPage(
       name: Routes.onboarding,

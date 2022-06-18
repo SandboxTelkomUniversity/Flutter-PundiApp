@@ -7,7 +7,11 @@ class AppColor {
 
   static const Color halloweenOrange = Color(0xFFF15820);
   static const Color orange = Color(0xFFFD8204);
+  static const Color eerieBlack = Color(0xFF1C1C1E);
   static const Color vividCerulean = Color(0xFF01ABE9);
+  static const Color quickSilver = Color(0xFFA1A2AA);
+  static const Color chineseSilver = Color(0xFFCCCCCC);
+  static const Color americanSilver = Color(0xFFCFCFCF);
 }
 
 class AppText {

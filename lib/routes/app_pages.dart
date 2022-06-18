@@ -1,12 +1,12 @@
 import 'package:get/get.dart';
-import 'package:pundi_apps/ui/login/login_page.dart';
+import 'package:pundi_apps/ui/wallet/wallet_page.dart';
 
 import '../ui/main/main_page.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
-  static const initial = Routes.login;
+  static const initial = Routes.wallet;
 
   static final routes = [
     GetPage(
@@ -14,8 +14,8 @@ class AppPages {
       page: () => const MainPage(),
     ),
     GetPage(
-      name: Routes.login,
-      page: () => const LoginPage(),
+      name: Routes.wallet,
+      page: () => const WalletPage(),
     ),
   ];
 }

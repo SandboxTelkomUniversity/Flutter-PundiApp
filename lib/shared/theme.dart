@@ -12,6 +12,8 @@ class AppColor {
   static const Color quickSilver = Color(0xFFA1A2AA);
   static const Color chineseSilver = Color(0xFFCCCCCC);
   static const Color americanSilver = Color(0xFFCFCFCF);
+  static const Color brightGray = Color(0xFFEBEBEB);
+  static const Color green = Color(0xFF28CD41);
 }
 
 class AppText {

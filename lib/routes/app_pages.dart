@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:pundi_apps/ui/activity/activity_page.dart';
 import 'package:pundi_apps/ui/home/home_page.dart';
 import 'package:pundi_apps/ui/login/login_page.dart';
 import 'package:pundi_apps/ui/onboarding/onboarding_page.dart';
@@ -36,6 +37,10 @@ class AppPages {
     GetPage(
       name: Routes.home,
       page: () => const HomePage(),
+    ),
+     GetPage(
+      name: Routes.activity,
+      page: () => const ActivityPage(),
     ),
   ];
 }

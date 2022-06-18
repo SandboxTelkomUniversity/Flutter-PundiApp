@@ -523,7 +523,7 @@ class DoneWidget extends StatelessWidget {
                       ],
                     ),
                   )),
-              const SizedBox(height: 224)
+              const SizedBox(height: 36)
             ],
           )
         ],

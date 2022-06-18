@@ -3,7 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:pundi_apps/controllers/main_controller.dart';
 import 'package:pundi_apps/shared/theme.dart';
+import 'package:pundi_apps/ui/home/home_page.dart';
 
+import '../activity/activity_page.dart';
 import 'navigation_item.dart';
 
 class MainPage extends StatelessWidget {
@@ -13,8 +15,8 @@ class MainPage extends StatelessWidget {
   final MainController mainController = Get.put(MainController());
 
   final List<Widget> currentScreenList = [
-    Container(),
-    Container(),
+    const HomePage(),
+    const ActivityPage(),
     Container(),
     Container(),
   ];

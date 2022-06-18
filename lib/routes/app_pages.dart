@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
+import 'package:pundi_apps/ui/splashscreen/splash_screen_page.dart';
 
 import '../ui/main/main_page.dart';
-import '../ui/main/splash.dart';
 
 part 'app_routes.dart';
 
@@ -11,7 +11,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: Routes.splash,
-      page: () => const SplashPage(),
+      page: () => const SplashScreenPage(),
     ),
     GetPage(
       name: Routes.main,

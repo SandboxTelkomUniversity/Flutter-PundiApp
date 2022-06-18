@@ -14,6 +14,11 @@ class AppColor {
   static const Color americanSilver = Color(0xFFCFCFCF);
   static const Color brightGray = Color(0xFFEBEBEB);
   static const Color green = Color(0xFF28CD41);
+  static const Color cyan = Color(0xFF00AED6);
+  static const Color purple = Color(0xFF4C3494);
+  static const Color blue = Color(0xFF108EE9);
+  static const Color red = Color(0xFFEE4E2C);
+  static const Color vividGamboge = Color(0xFFFF9500);
 }
 
 class AppText {

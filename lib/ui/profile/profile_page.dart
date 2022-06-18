@@ -14,10 +14,37 @@ class ProfilePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: const Color(0xFFF5F7F7),
         appBar: AppBar(
+          toolbarHeight: 100,
+          titleSpacing: 25,
+          centerTitle: true,
           backgroundColor: AppColor.orange,
-          title: Text(
-            'Profile',
-            style: AppText.textMedium.copyWith(fontWeight: AppText.bold),
+          title: Row(
+            children: [
+              Image.asset(
+                'assets/bitmap/avatar.png',
+                width: 60,
+                height: 60,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 15),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Gia Anisa",
+                      style:
+                          AppText.textNormal.copyWith(fontWeight: AppText.bold),
+                    ),
+                    Text(
+                      "+62822161******",
+                      style: AppText.textSmall
+                          .copyWith(fontWeight: AppText.regular),
+                    ),
+                  ],
+                ),
+              )
+            ],
           ),
           bottom: const TabBar(
             indicatorColor: Colors.white,

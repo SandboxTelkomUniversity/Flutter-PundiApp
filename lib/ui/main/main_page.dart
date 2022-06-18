@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:pundi_apps/controllers/main_controller.dart';
 import 'package:pundi_apps/shared/theme.dart';
 import 'package:pundi_apps/ui/home/home_page.dart';
+import 'package:pundi_apps/ui/profile/profile_page.dart';
 
 import '../activity/activity_page.dart';
 import 'navigation_item.dart';
@@ -18,7 +19,7 @@ class MainPage extends StatelessWidget {
     const HomePage(),
     const ActivityPage(),
     Container(),
-    Container(),
+    const ProfilePage(),
   ];
 
   @override

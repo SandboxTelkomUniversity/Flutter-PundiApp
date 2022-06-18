@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_donor/shared/theme.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:pundi_apps/shared/theme.dart';
 
 class NavigationItem extends StatelessWidget {
   const NavigationItem({
@@ -28,7 +28,7 @@ class NavigationItem extends StatelessWidget {
           iconSize: 27.0,
           icon: SvgPicture.asset(
             svgSource,
-            color: active ? AppColor.cRed : AppColor.cGrey,
+            color: active ? AppColor.orange : AppColor.americanSilver,
           ),
         ),
         Text(
@@ -36,6 +36,7 @@ class NavigationItem extends StatelessWidget {
           style: AppText.textExtraSmall.copyWith(
             height: 0,
             fontWeight: AppText.semiBold,
+            color: active ? AppColor.orange : AppColor.americanSilver,
           ),
         ),
         const SizedBox(height: 10.0),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pundi_apps/shared/theme.dart';
+
+import '../../routes/app_pages.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({Key? key}) : super(key: key);
@@ -71,7 +74,9 @@ class OnboardingPage extends StatelessWidget {
                   fontWeight: AppText.semiBold,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Get.offNamed(Routes.register);
+              },
               child: const Text(
                 "Daftar Sekarang",
                 textAlign: TextAlign.center,
@@ -80,11 +85,16 @@ class OnboardingPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Text(
-              "Masuk",
-              style: AppText.textNormal.copyWith(
-                  fontWeight: AppText.bold, color: AppColor.halloweenOrange),
-              textAlign: TextAlign.center,
+            GestureDetector(
+              onTap: () {
+                Get.offNamed(Routes.login);
+              },
+              child: Text(
+                "Masuk",
+                style: AppText.textNormal.copyWith(
+                    fontWeight: AppText.bold, color: AppColor.halloweenOrange),
+                textAlign: TextAlign.center,
+              ),
             ),
             const SizedBox(
               height: 20,

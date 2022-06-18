@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pundi_apps/shared/theme.dart';
+
+import '../../routes/app_pages.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -139,7 +142,9 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: AppText.semiBold,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.offNamed(Routes.main);
+                },
                 child: const Text(
                   "Masuk",
                   textAlign: TextAlign.center,
@@ -158,12 +163,17 @@ class _LoginPageState extends State<LoginPage> {
                         fontSize: 12,
                       ),
                     ),
-                    Text(
-                      " Daftar",
-                      style: AppText.textMedium.copyWith(
-                        color: AppColor.halloweenOrange,
-                        fontWeight: AppText.regular,
-                        fontSize: 12,
+                    GestureDetector(
+                      onTap: () {
+                        Get.toNamed(Routes.register);
+                      },
+                      child: Text(
+                        " Daftar",
+                        style: AppText.textMedium.copyWith(
+                          color: AppColor.halloweenOrange,
+                          fontWeight: AppText.regular,
+                          fontSize: 12,
+                        ),
                       ),
                     ),
                   ],

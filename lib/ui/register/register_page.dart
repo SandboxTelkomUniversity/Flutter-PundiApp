@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pundi_apps/shared/theme.dart';
+
+import '../../routes/app_pages.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -299,7 +302,9 @@ class RegisterPage extends StatelessWidget {
               height: 50,
               width: MediaQuery.of(context).size.width,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.offNamed(Routes.main);
+                },
                 style: TextButton.styleFrom(
                   backgroundColor: AppColor.halloweenOrange,
                   shape: RoundedRectangleBorder(
@@ -329,7 +334,9 @@ class RegisterPage extends StatelessWidget {
                       fontSize: 12),
                 ),
                 GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Get.toNamed(Routes.login);
+                    },
                     child: Text(
                       'Masuk',
                       style: AppText.textMedium.copyWith(

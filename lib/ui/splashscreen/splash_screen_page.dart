@@ -66,7 +66,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   startSplashScreen() async {
     var duration = const Duration(seconds: 4);
     return Timer(duration, () {
-      Get.offNamed(Routes.main);
+      Get.offNamed(Routes.onboarding);
     });
   }
 }

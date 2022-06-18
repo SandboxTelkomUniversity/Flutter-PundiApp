@@ -18,6 +18,7 @@ class ActivityPage extends StatelessWidget {
             style: AppText.textMedium.copyWith(fontWeight: AppText.bold),
           ),
           bottom: const TabBar(
+            indicatorColor: Colors.white,
             tabs: [
               Tab(
                 text: 'Dalam Proses',

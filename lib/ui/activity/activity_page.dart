@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pundi_apps/shared/theme.dart';
+import 'package:pundi_apps/ui/activity/done_widget.dart';
+import 'package:pundi_apps/ui/activity/in_process_widget.dart';
 
 class ActivityPage extends StatelessWidget {
   const ActivityPage({Key? key}) : super(key: key);
@@ -29,10 +31,10 @@ class ActivityPage extends StatelessWidget {
         body: const TabBarView(
           children: [
             Center(
-              child: Text("Screen 1"),
+              child: InProcessWidget(),
             ),
             Center(
-              child: Text("Screen 2"),
+              child: DoneWidget(),
             )
           ],
         ),

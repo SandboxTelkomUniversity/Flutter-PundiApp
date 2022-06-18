@@ -15,19 +15,13 @@ class WalletPage extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.arrow_back_ios_new_rounded),
-                  onPressed: () {},
-                  iconSize: 30,
-                ),
-                Text(
-                  'Dompet Digital',
-                  style: AppText.textMedium
-                      .copyWith(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-              ],
+            Container(
+              margin: const EdgeInsets.only(left: 30),
+              child: Text(
+                'Dompet Digital',
+                style: AppText.textMedium
+                    .copyWith(fontWeight: FontWeight.bold, fontSize: 20),
+              ),
             ),
             InkWell(
               onTap: () {

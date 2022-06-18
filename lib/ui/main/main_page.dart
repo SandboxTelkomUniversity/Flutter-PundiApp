@@ -7,6 +7,7 @@ import 'package:pundi_apps/ui/home/home_page.dart';
 import 'package:pundi_apps/ui/profile/profile_page.dart';
 
 import '../activity/activity_page.dart';
+import '../wallet/wallet_page.dart';
 import 'navigation_item.dart';
 
 class MainPage extends StatelessWidget {
@@ -18,7 +19,7 @@ class MainPage extends StatelessWidget {
   final List<Widget> currentScreenList = [
     const HomePage(),
     const ActivityPage(),
-    Container(),
+    const WalletPage(),
     const ProfilePage(),
   ];
 

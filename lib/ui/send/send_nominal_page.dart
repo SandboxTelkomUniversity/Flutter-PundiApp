@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../routes/app_pages.dart';
 import '../../shared/theme.dart';
 
 class SendNominalPage extends StatefulWidget {
@@ -244,9 +245,11 @@ class _SendNominalPageState extends State<SendNominalPage> {
                     fontWeight: AppText.semiBold,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(Routes.method);
+                },
                 child: const Text(
-                  "Tujuan Baru",
+                  "Lanjutankan",
                   textAlign: TextAlign.center,
                 ),
               ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:pundi_apps/routes/app_pages.dart';
 import 'package:pundi_apps/shared/theme.dart';
 
 class MethodPage extends StatefulWidget {
@@ -17,6 +19,7 @@ class _MethodPageState extends State<MethodPage> {
         centerTitle: false,
         titleSpacing: 0.0,
         backgroundColor: AppColor.orange,
+        automaticallyImplyLeading: false,
         title: Row(
           children: [
             IconButton(
@@ -392,20 +395,25 @@ class _MethodPageState extends State<MethodPage> {
           color: AppColor.white,
           child: Column(
             children: [
-              Container(
-                height: 50,
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: AppColor.halloweenOrange,
-                  borderRadius: BorderRadius.circular(7),
-                ),
-                child: Center(
-                  child: Text(
-                    'Lanjutkan',
-                    style: AppText.textMedium.copyWith(
-                        color: AppColor.white,
-                        fontWeight: AppText.semiBold,
-                        fontSize: 16),
+              GestureDetector(
+                onTap: () {
+                  Get.toNamed(Routes.danaPin2);
+                },
+                child: Container(
+                  height: 50,
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                    color: AppColor.halloweenOrange,
+                    borderRadius: BorderRadius.circular(7),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Lanjutkan',
+                      style: AppText.textMedium.copyWith(
+                          color: AppColor.white,
+                          fontWeight: AppText.semiBold,
+                          fontSize: 16),
+                    ),
                   ),
                 ),
               )

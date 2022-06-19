@@ -1,8 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
+import '../../routes/app_pages.dart';
 import '../../shared/theme.dart';
 
 class WaitPage extends StatefulWidget {
@@ -43,9 +45,9 @@ class _WaitPageState extends State<WaitPage> {
   }
 
   AwaitingScreen() async {
-    var duration = const Duration(seconds: 4);
+    var duration = const Duration(seconds: 10);
     return Timer(duration, () {
-      // Get.offNamed(Routes.main);
+      Get.offNamed(Routes.main);
     });
   }
 }

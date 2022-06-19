@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
+import '../../controllers/main_controller.dart';
 import '../../routes/app_pages.dart';
 import '../../shared/theme.dart';
 
@@ -15,6 +16,8 @@ class WaitPage extends StatefulWidget {
 }
 
 class _WaitPageState extends State<WaitPage> {
+  final MainController mainController = Get.find();
+
   void initState() {
     AwaitingScreen();
   }
@@ -47,6 +50,7 @@ class _WaitPageState extends State<WaitPage> {
   AwaitingScreen() async {
     var duration = const Duration(seconds: 10);
     return Timer(duration, () {
+      mainController.changeIndex(1);
       Get.offNamed(Routes.main);
     });
   }

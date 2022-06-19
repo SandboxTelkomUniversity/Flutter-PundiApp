@@ -18,7 +18,7 @@ class SendPage extends StatelessWidget {
               icon: const Icon(Icons.arrow_back_ios_new_rounded),
             ),
             Text(
-              "Kirim antar e-wallet",
+              "Kirim antar E-wallet",
               style: AppText.textMedium
                   .copyWith(fontWeight: AppText.bold, fontSize: 20),
             )

@@ -296,7 +296,7 @@ class RegisterPage extends StatelessWidget {
     Widget footer() {
       return BottomAppBar(
         child: Container(
-          margin: EdgeInsets.only(left: 20, right: 20, top: 28),
+          margin: EdgeInsets.only(left: 20, right: 20, top: 2),
           height: 120,
           child: Column(
             children: [
@@ -359,18 +359,20 @@ class RegisterPage extends StatelessWidget {
       backgroundColor: AppColor.white,
       resizeToAvoidBottomInset: false,
       bottomNavigationBar: footer(),
-      body: SafeArea(
-        child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              header(),
-              nomorhpInput(),
-              emailInput(),
-              namalengkapInput(),
-              passwordInput(),
-            ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Container(
+            margin: EdgeInsets.symmetric(horizontal: 30),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                header(),
+                nomorhpInput(),
+                emailInput(),
+                namalengkapInput(),
+                passwordInput(),
+              ],
+            ),
           ),
         ),
       ),

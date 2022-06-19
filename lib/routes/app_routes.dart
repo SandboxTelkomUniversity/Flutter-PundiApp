@@ -14,4 +14,5 @@ abstract class Routes {
   static const String send = '/send';
   static const String nominal = '/nominal';
   static const String method = '/method';
+  static const String wait = '/wait';
 }

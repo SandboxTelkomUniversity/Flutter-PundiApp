@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:pundi_apps/ui/wait/wait_page.dart';
 import 'package:pundi_apps/ui/activity/activity_page.dart';
 import 'package:pundi_apps/ui/home/home_page.dart';
 import 'package:pundi_apps/ui/login/login_page.dart';
@@ -75,6 +76,10 @@ class AppPages {
     GetPage(
       name: Routes.method,
       page: () => const MethodPage(),
+    ),
+    GetPage(
+      name: Routes.wait,
+      page: () => const WaitPage(),
     ),
   ];
 }

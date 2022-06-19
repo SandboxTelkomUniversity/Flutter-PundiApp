@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:pundi_apps/ui/send/send_nominal_page.dart';
+import 'package:pundi_apps/ui/send/send_page.dart';
 import 'package:pundi_apps/ui/wallet/dana_page.dart';
 import 'package:pundi_apps/ui/wallet/wallet_page.dart';
 import 'package:pundi_apps/ui/activity/activity_page.dart';
@@ -61,6 +63,14 @@ class AppPages {
     GetPage(
       name: Routes.dana,
       page: () => const DanaPage(),
+    ),
+    GetPage(
+      name: Routes.send,
+      page: () => const SendPage(),
+    ),
+    GetPage(
+      name: Routes.nominal,
+      page: () => const SendNominalPage(),
     ),
   ];
 }

@@ -24,7 +24,9 @@ class _MethodPageState extends State<MethodPage> {
           children: [
             IconButton(
               icon: const Icon(Icons.arrow_back_ios_new_rounded),
-              onPressed: () {},
+              onPressed: () {
+                Get.back();
+              },
               iconSize: 30,
             ),
             Text(

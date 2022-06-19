@@ -18,6 +18,7 @@ class ProfilePage extends StatelessWidget {
           titleSpacing: 25,
           centerTitle: true,
           backgroundColor: AppColor.orange,
+          automaticallyImplyLeading: false,
           title: Row(
             children: [
               Image.asset(

@@ -13,6 +13,7 @@ class ActivityPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColor.orange,
+          automaticallyImplyLeading: false,
           title: Text(
             'Aktivitas Transaksi',
             style: AppText.textMedium.copyWith(fontWeight: AppText.bold),

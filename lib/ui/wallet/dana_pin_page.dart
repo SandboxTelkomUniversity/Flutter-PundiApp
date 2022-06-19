@@ -1,9 +1,23 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:pundi_apps/shared/theme.dart';
 
-class DanaPinPage extends StatelessWidget {
+import '../../routes/app_pages.dart';
+
+class DanaPinPage extends StatefulWidget {
   const DanaPinPage({Key? key}) : super(key: key);
+
+  @override
+  State<DanaPinPage> createState() => _DanaPinPageState();
+}
+
+class _DanaPinPageState extends State<DanaPinPage> {
+  void initState() {
+    AwaitingScreen();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +27,12 @@ class DanaPinPage extends StatelessWidget {
         height: 24,
         child: Row(
           children: [
-            SvgPicture.asset('assets/vector/ic_cross.svg'),
+            InkWell(
+              onTap: () {
+                Get.back();
+              },
+              child: SvgPicture.asset('assets/vector/ic_cross.svg'),
+            ),
             SizedBox(
               width: 16,
             ),
@@ -200,5 +219,12 @@ class DanaPinPage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  AwaitingScreen() async {
+    var duration = const Duration(seconds: 4);
+    return Timer(duration, () {
+      Get.toNamed(Routes.danaOtp);
+    });
   }
 }

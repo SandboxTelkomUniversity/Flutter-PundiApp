@@ -239,18 +239,18 @@ class DanaPage extends StatelessWidget {
             SizedBox(
               height: 28,
             ),
-            Container(
-              height: 50,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                color: AppColor.blue,
-                borderRadius: BorderRadius.circular(7),
-              ),
-              child: Center(
-                child: GestureDetector(
-                  onTap: () {
-                    Get.offAllNamed(Routes.main);
-                  },
+            GestureDetector(
+              onTap: () {
+                Get.toNamed(Routes.danaPin);
+              },
+              child: Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: AppColor.blue,
+                  borderRadius: BorderRadius.circular(7),
+                ),
+                child: Center(
                   child: Text(
                     'Lanjutkan',
                     style: AppText.textMedium.copyWith(

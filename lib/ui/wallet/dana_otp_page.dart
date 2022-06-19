@@ -1,9 +1,23 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:pundi_apps/shared/theme.dart';
 
-class DanaOTPPAge extends StatelessWidget {
+import '../../routes/app_pages.dart';
+
+class DanaOTPPAge extends StatefulWidget {
   const DanaOTPPAge({Key? key}) : super(key: key);
+
+  @override
+  State<DanaOTPPAge> createState() => _DanaOTPPAgeState();
+}
+
+class _DanaOTPPAgeState extends State<DanaOTPPAge> {
+  void initState() {
+    AwaitingScreen();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +27,12 @@ class DanaOTPPAge extends StatelessWidget {
         height: 24,
         child: Row(
           children: [
-            SvgPicture.asset('assets/vector/ic_cross.svg'),
+            InkWell(
+              onTap: () {
+                Get.back();
+              },
+              child: SvgPicture.asset('assets/vector/ic_cross.svg'),
+            ),
             SizedBox(
               width: 16,
             ),
@@ -129,5 +148,12 @@ class DanaOTPPAge extends StatelessWidget {
             child: Column(
           children: [header(), otp()],
         )));
+  }
+
+  AwaitingScreen() async {
+    var duration = const Duration(seconds: 4);
+    return Timer(duration, () {
+      Get.offNamed(Routes.main);
+    });
   }
 }

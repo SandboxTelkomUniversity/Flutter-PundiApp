@@ -20,7 +20,7 @@ class _MethodPageState extends State<MethodPage> {
         title: Row(
           children: [
             IconButton(
-              icon: Icon(Icons.arrow_back_ios_new_rounded),
+              icon: const Icon(Icons.arrow_back_ios_new_rounded),
               onPressed: () {},
               iconSize: 30,
             ),
@@ -52,7 +52,7 @@ class _MethodPageState extends State<MethodPage> {
                         boxShadow: [
                           BoxShadow(
                             color: AppColor.black.withOpacity(0.1),
-                            offset: Offset(0, 0),
+                            offset: const Offset(0, 0),
                             spreadRadius: 1,
                             blurRadius: 4,
                           ),
@@ -81,7 +81,7 @@ class _MethodPageState extends State<MethodPage> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 9,
                           ),
                           Row(
@@ -112,7 +112,7 @@ class _MethodPageState extends State<MethodPage> {
                         boxShadow: [
                           BoxShadow(
                             color: AppColor.black.withOpacity(0.1),
-                            offset: Offset(0, 0),
+                            offset: const Offset(0, 0),
                             blurRadius: 4,
                             spreadRadius: 1,
                           ),
@@ -141,7 +141,7 @@ class _MethodPageState extends State<MethodPage> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
@@ -196,7 +196,7 @@ class _MethodPageState extends State<MethodPage> {
                         builder: (context) {
                           return Container(
                             height: 400,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.vertical(
                                     top: Radius.circular(20)),
                                 color: AppColor.white),
@@ -216,7 +216,7 @@ class _MethodPageState extends State<MethodPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 28),
+                                  const SizedBox(height: 28),
                                   Text(
                                     'Tambah Dompet Digital',
                                     style: AppText.textMedium.copyWith(
@@ -225,7 +225,7 @@ class _MethodPageState extends State<MethodPage> {
                                       color: AppColor.black,
                                     ),
                                   ),
-                                  SizedBox(height: 28),
+                                  const SizedBox(height: 28),
                                   Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -236,7 +236,7 @@ class _MethodPageState extends State<MethodPage> {
                                             'assets/bitmap/gopay_icon.png',
                                             width: 24,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 12,
                                           ),
                                           Text(
@@ -249,14 +249,14 @@ class _MethodPageState extends State<MethodPage> {
                                           ),
                                         ],
                                       ),
-                                      Icon(
+                                      const Icon(
                                         Icons.keyboard_arrow_right_rounded,
                                         color: AppColor.orange,
                                         size: 40,
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 20,
                                   ),
                                   Row(
@@ -269,7 +269,7 @@ class _MethodPageState extends State<MethodPage> {
                                             'assets/bitmap/ovo_icon.png',
                                             width: 24,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 12,
                                           ),
                                           Text(
@@ -282,14 +282,14 @@ class _MethodPageState extends State<MethodPage> {
                                           ),
                                         ],
                                       ),
-                                      Icon(
+                                      const Icon(
                                         Icons.keyboard_arrow_right_rounded,
                                         color: AppColor.orange,
                                         size: 40,
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 20,
                                   ),
                                   Row(
@@ -302,7 +302,7 @@ class _MethodPageState extends State<MethodPage> {
                                             'assets/bitmap/dana_icon.png',
                                             width: 24,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 12,
                                           ),
                                           Text(
@@ -315,14 +315,14 @@ class _MethodPageState extends State<MethodPage> {
                                           ),
                                         ],
                                       ),
-                                      Icon(
+                                      const Icon(
                                         Icons.keyboard_arrow_right_rounded,
                                         color: AppColor.orange,
                                         size: 40,
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 20,
                                   ),
                                   Row(
@@ -335,7 +335,7 @@ class _MethodPageState extends State<MethodPage> {
                                             'assets/bitmap/spay_icon.png',
                                             width: 24,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 12,
                                           ),
                                           Text(
@@ -348,7 +348,7 @@ class _MethodPageState extends State<MethodPage> {
                                           ),
                                         ],
                                       ),
-                                      Icon(
+                                      const Icon(
                                         Icons.keyboard_arrow_right_rounded,
                                         color: AppColor.orange,
                                         size: 40,
@@ -371,143 +371,14 @@ class _MethodPageState extends State<MethodPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
-            Container(
-              height: 75,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: AppColor.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColor.black.withOpacity(0.1),
-                      offset: Offset(0, 0),
-                      spreadRadius: 1,
-                      blurRadius: 4,
-                    ),
-                  ]),
-              child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Saldo Pundi',
-                          style: AppText.textMedium.copyWith(
-                              fontSize: 12,
-                              fontWeight: AppText.regular,
-                              color: AppColor.orange),
-                        ),
-                        Text(
-                          'Rp 500.000',
-                          style: AppText.textMedium.copyWith(
-                              fontSize: 16,
-                              fontWeight: AppText.semiBold,
-                              color: AppColor.black),
-                        )
-                      ],
-                    ),
-                    const Icon(
-                      Icons.radio_button_checked,
-                      color: AppColor.orange,
-                      size: 24,
-                    )
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
+            const SaldoPundi(),
+            const SizedBox(
               height: 12,
             ),
-            Container(
-              height: 75,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: AppColor.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColor.black.withOpacity(0.1),
-                      offset: Offset(0, 0),
-                      spreadRadius: 1,
-                      blurRadius: 4,
-                    ),
-                  ]),
-              child: Stack(children: [
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Container(
-                    width: 99,
-                    height: 14,
-                    decoration: const BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(10),
-                            bottomLeft: Radius.circular(10)),
-                        color: AppColor.orange),
-                    child: Center(
-                      child: Text(
-                        'Biaya +Rp1.500',
-                        style: AppText.textMedium.copyWith(
-                            fontSize: 10,
-                            fontWeight: AppText.regular,
-                            color: AppColor.white),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'DANA | Gia Anisa',
-                            style: AppText.textMedium.copyWith(
-                                fontSize: 12,
-                                fontWeight: AppText.medium,
-                                color: AppColor.black),
-                          ),
-                          SizedBox(
-                            height: 9,
-                          ),
-                          Row(
-                            children: [
-                              Image.asset(
-                                'assets/bitmap/dana_icon.png',
-                                height: 24,
-                              ),
-                              SizedBox(
-                                width: 13,
-                              ),
-                              Text(
-                                'Rp1.780.000',
-                                style: AppText.textMedium.copyWith(
-                                    fontSize: 12,
-                                    fontWeight: AppText.medium,
-                                    color: AppColor.black),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                      Icon(
-                        Icons.radio_button_off,
-                        color: AppColor.orange.withOpacity(0.5),
-                        size: 24,
-                      )
-                    ],
-                  ),
-                ),
-              ]),
-            ),
+            const SaldoDana(),
           ],
         ),
       );
@@ -515,32 +386,33 @@ class _MethodPageState extends State<MethodPage> {
 
     Widget footer() {
       return BottomAppBar(
-          child: Container(
-        margin: const EdgeInsets.only(left: 20, right: 20, top: 28),
-        height: 80,
-        child: Column(
-          children: [
-            Container(
-              height: 50,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                color: AppColor.halloweenOrange,
-                borderRadius: BorderRadius.circular(7),
-              ),
-              child: Center(
-                child: Text(
-                  'Lanjutkan',
-                  style: AppText.textMedium.copyWith(
-                      color: AppColor.white,
-                      fontWeight: AppText.semiBold,
-                      fontSize: 16),
+        child: Container(
+          margin: const EdgeInsets.only(left: 20, right: 20, top: 28),
+          height: 80,
+          color: AppColor.white,
+          child: Column(
+            children: [
+              Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: AppColor.halloweenOrange,
+                  borderRadius: BorderRadius.circular(7),
                 ),
-              ),
-            )
-          ],
+                child: Center(
+                  child: Text(
+                    'Lanjutkan',
+                    style: AppText.textMedium.copyWith(
+                        color: AppColor.white,
+                        fontWeight: AppText.semiBold,
+                        fontSize: 16),
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
-        color: AppColor.white,
-      ));
+      );
     }
 
     return Scaffold(
@@ -551,5 +423,154 @@ class _MethodPageState extends State<MethodPage> {
             child: Column(
               children: [header(), nominalKirim(), metodeKirim()],
             )));
+  }
+}
+
+class SaldoDana extends StatelessWidget {
+  const SaldoDana({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 75,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: AppColor.white,
+          boxShadow: [
+            BoxShadow(
+              color: AppColor.black.withOpacity(0.1),
+              offset: const Offset(0, 0),
+              spreadRadius: 1,
+              blurRadius: 4,
+            ),
+          ]),
+      child: Stack(children: [
+        Align(
+          alignment: Alignment.topRight,
+          child: Container(
+            width: 99,
+            height: 14,
+            decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(10),
+                    bottomLeft: Radius.circular(10)),
+                color: AppColor.orange),
+            child: Center(
+              child: Text(
+                'Biaya +Rp1.500',
+                style: AppText.textMedium.copyWith(
+                    fontSize: 10,
+                    fontWeight: AppText.regular,
+                    color: AppColor.white),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'DANA | Gia Anisa',
+                    style: AppText.textMedium.copyWith(
+                        fontSize: 12,
+                        fontWeight: AppText.medium,
+                        color: AppColor.black),
+                  ),
+                  const SizedBox(
+                    height: 9,
+                  ),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/bitmap/dana_icon.png',
+                        height: 24,
+                      ),
+                      const SizedBox(
+                        width: 13,
+                      ),
+                      Text(
+                        'Rp1.780.000',
+                        style: AppText.textMedium.copyWith(
+                            fontSize: 12,
+                            fontWeight: AppText.medium,
+                            color: AppColor.black),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+              Icon(
+                Icons.radio_button_off,
+                color: AppColor.orange.withOpacity(0.5),
+                size: 24,
+              )
+            ],
+          ),
+        ),
+      ]),
+    );
+  }
+}
+
+class SaldoPundi extends StatelessWidget {
+  const SaldoPundi({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 75,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: AppColor.white,
+          boxShadow: [
+            BoxShadow(
+              color: AppColor.black.withOpacity(0.1),
+              offset: const Offset(0, 0),
+              spreadRadius: 1,
+              blurRadius: 4,
+            ),
+          ]),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Saldo Pundi',
+                  style: AppText.textMedium.copyWith(
+                      fontSize: 12,
+                      fontWeight: AppText.regular,
+                      color: AppColor.orange),
+                ),
+                Text(
+                  'Rp 500.000',
+                  style: AppText.textMedium.copyWith(
+                      fontSize: 16,
+                      fontWeight: AppText.semiBold,
+                      color: AppColor.black),
+                )
+              ],
+            ),
+            const Icon(
+              Icons.radio_button_checked,
+              color: AppColor.orange,
+              size: 24,
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

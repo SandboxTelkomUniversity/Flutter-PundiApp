@@ -294,60 +294,63 @@ class RegisterPage extends StatelessWidget {
     }
 
     Widget footer() {
-      return Container(
-        margin: EdgeInsets.only(bottom: 42),
-        child: Column(
-          children: [
-            Container(
-              height: 50,
-              width: MediaQuery.of(context).size.width,
-              child: TextButton(
-                onPressed: () {
-                  Get.offNamed(Routes.main);
-                },
-                style: TextButton.styleFrom(
-                  backgroundColor: AppColor.halloweenOrange,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(100),
+      return BottomAppBar(
+        child: Container(
+          margin: EdgeInsets.only(left: 20, right: 20, top: 28),
+          height: 120,
+          child: Column(
+            children: [
+              Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width,
+                child: TextButton(
+                  onPressed: () {
+                    Get.offNamed(Routes.main);
+                  },
+                  style: TextButton.styleFrom(
+                    backgroundColor: AppColor.halloweenOrange,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                  ),
+                  child: Text(
+                    'Daftar',
+                    style: AppText.textMedium.copyWith(
+                        color: AppColor.white,
+                        fontWeight: AppText.medium,
+                        fontSize: 16),
                   ),
                 ),
-                child: Text(
-                  'Daftar',
-                  style: AppText.textMedium.copyWith(
-                      color: AppColor.white,
-                      fontWeight: AppText.medium,
-                      fontSize: 16),
-                ),
               ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Sudah punya akun? ',
-                  style: AppText.textNormal.copyWith(
-                      color: AppColor.black.withOpacity(0.5),
-                      fontWeight: AppText.medium,
-                      fontSize: 12),
-                ),
-                GestureDetector(
-                    onTap: () {
-                      Get.toNamed(Routes.login);
-                    },
-                    child: Text(
-                      'Masuk',
-                      style: AppText.textMedium.copyWith(
-                        color: AppColor.halloweenOrange,
-                        fontWeight: AppText.semiBold,
-                        fontSize: 12,
-                      ),
-                    )),
-              ],
-            ),
-          ],
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Sudah punya akun? ',
+                    style: AppText.textNormal.copyWith(
+                        color: AppColor.black.withOpacity(0.5),
+                        fontWeight: AppText.medium,
+                        fontSize: 12),
+                  ),
+                  GestureDetector(
+                      onTap: () {
+                        Get.toNamed(Routes.login);
+                      },
+                      child: Text(
+                        'Masuk',
+                        style: AppText.textMedium.copyWith(
+                          color: AppColor.halloweenOrange,
+                          fontWeight: AppText.semiBold,
+                          fontSize: 12,
+                        ),
+                      )),
+                ],
+              ),
+            ],
+          ),
         ),
       );
     }
@@ -355,6 +358,7 @@ class RegisterPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.white,
       resizeToAvoidBottomInset: false,
+      bottomNavigationBar: footer(),
       body: SafeArea(
         child: Container(
           margin: EdgeInsets.symmetric(horizontal: 30),
@@ -366,8 +370,6 @@ class RegisterPage extends StatelessWidget {
               emailInput(),
               namalengkapInput(),
               passwordInput(),
-              Spacer(),
-              footer()
             ],
           ),
         ),

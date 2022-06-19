@@ -22,7 +22,7 @@ import '../ui/main/main_page.dart';
 part 'app_routes.dart';
 
 class AppPages {
-  static const initial = Routes.danaOtp;
+  static const initial = Routes.splash;
 
   static final routes = [
     GetPage(

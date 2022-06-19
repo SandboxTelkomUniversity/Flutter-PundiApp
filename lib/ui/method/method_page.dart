@@ -507,7 +507,7 @@ class SaldoDana extends StatelessWidget {
                 ],
               ),
               Icon(
-                Icons.radio_button_off,
+                Icons.radio_button_checked,
                 color: AppColor.orange.withOpacity(0.5),
                 size: 24,
               )
@@ -564,7 +564,7 @@ class SaldoPundi extends StatelessWidget {
               ],
             ),
             const Icon(
-              Icons.radio_button_checked,
+              Icons.radio_button_off,
               color: AppColor.orange,
               size: 24,
             )

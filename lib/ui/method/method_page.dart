@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:pundi_apps/shared/theme.dart';
 
-class MethodPage extends StatelessWidget {
+class MethodPage extends StatefulWidget {
   const MethodPage({Key? key}) : super(key: key);
 
+  @override
+  State<MethodPage> createState() => _MethodPageState();
+}
+
+class _MethodPageState extends State<MethodPage> {
   @override
   Widget build(BuildContext context) {
     Widget header() {
@@ -183,12 +188,186 @@ class MethodPage extends StatelessWidget {
                       fontWeight: AppText.semiBold,
                       color: AppColor.black),
                 ),
-                Text(
-                  'Dompet Lainnya',
-                  style: AppText.textMedium.copyWith(
-                      fontSize: 10,
-                      fontWeight: AppText.semiBold,
-                      color: AppColor.orange),
+                InkWell(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        backgroundColor: Colors.transparent,
+                        builder: (context) {
+                          return Container(
+                            height: 400,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.vertical(
+                                    top: Radius.circular(20)),
+                                color: AppColor.white),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 12),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Center(
+                                    child: Container(
+                                      width: 55,
+                                      height: 6,
+                                      decoration: BoxDecoration(
+                                        color: AppColor.orange,
+                                        borderRadius: BorderRadius.circular(26),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 28),
+                                  Text(
+                                    'Tambah Dompet Digital',
+                                    style: AppText.textMedium.copyWith(
+                                      fontWeight: AppText.semiBold,
+                                      fontSize: 14,
+                                      color: AppColor.black,
+                                    ),
+                                  ),
+                                  SizedBox(height: 28),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/bitmap/gopay_icon.png',
+                                            width: 24,
+                                          ),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
+                                          Text(
+                                            'GoPay',
+                                            style: AppText.textMedium.copyWith(
+                                              fontWeight: AppText.semiBold,
+                                              fontSize: 14,
+                                              color: AppColor.black,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Icon(
+                                        Icons.keyboard_arrow_right_rounded,
+                                        color: AppColor.orange,
+                                        size: 40,
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/bitmap/ovo_icon.png',
+                                            width: 24,
+                                          ),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
+                                          Text(
+                                            'OVO',
+                                            style: AppText.textMedium.copyWith(
+                                              fontWeight: AppText.semiBold,
+                                              fontSize: 14,
+                                              color: AppColor.black,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Icon(
+                                        Icons.keyboard_arrow_right_rounded,
+                                        color: AppColor.orange,
+                                        size: 40,
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/bitmap/dana_icon.png',
+                                            width: 24,
+                                          ),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
+                                          Text(
+                                            'Dana',
+                                            style: AppText.textMedium.copyWith(
+                                              fontWeight: AppText.semiBold,
+                                              fontSize: 14,
+                                              color: AppColor.black,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Icon(
+                                        Icons.keyboard_arrow_right_rounded,
+                                        color: AppColor.orange,
+                                        size: 40,
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/bitmap/spay_icon.png',
+                                            width: 24,
+                                          ),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
+                                          Text(
+                                            'Shoope Pay',
+                                            style: AppText.textMedium.copyWith(
+                                              fontWeight: AppText.semiBold,
+                                              fontSize: 14,
+                                              color: AppColor.black,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Icon(
+                                        Icons.keyboard_arrow_right_rounded,
+                                        color: AppColor.orange,
+                                        size: 40,
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        });
+                  },
+                  child: Text(
+                    'Dompet Lainnya',
+                    style: AppText.textMedium.copyWith(
+                        fontSize: 10,
+                        fontWeight: AppText.semiBold,
+                        color: AppColor.orange),
+                  ),
                 ),
               ],
             ),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pundi_apps/shared/theme.dart';
+
+import '../../routes/app_pages.dart';
 
 class SendPage extends StatelessWidget {
   const SendPage({Key? key}) : super(key: key);
@@ -11,10 +14,13 @@ class SendPage extends StatelessWidget {
         toolbarHeight: 80,
         centerTitle: false,
         backgroundColor: AppColor.orange,
+        automaticallyImplyLeading: false,
         title: Row(
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.back();
+              },
               icon: const Icon(Icons.arrow_back_ios_new_rounded),
             ),
             Text(
@@ -210,7 +216,9 @@ class SendPage extends StatelessWidget {
                     fontWeight: AppText.semiBold,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(Routes.nominal);
+                },
                 child: const Text(
                   "Tujuan Baru",
                   textAlign: TextAlign.center,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../shared/theme.dart';
 
@@ -20,10 +21,13 @@ class _SendNominalPageState extends State<SendNominalPage> {
         toolbarHeight: 80,
         centerTitle: false,
         backgroundColor: AppColor.orange,
+        automaticallyImplyLeading: false,
         title: Row(
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.back();
+              },
               icon: const Icon(Icons.arrow_back_ios_new_rounded),
             ),
             Text(

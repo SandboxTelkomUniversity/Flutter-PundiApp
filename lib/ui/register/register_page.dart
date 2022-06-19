@@ -289,6 +289,9 @@ class RegisterPage extends StatelessWidget {
                       fontSize: 12),
                 ),
               ])),
+              SizedBox(
+                height: 10,
+              )
             ],
           ));
     }

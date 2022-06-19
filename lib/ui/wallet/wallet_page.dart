@@ -14,6 +14,7 @@ class WalletPage extends StatelessWidget {
         toolbarHeight: 80,
         centerTitle: false,
         titleSpacing: 0.0,
+        automaticallyImplyLeading: false,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

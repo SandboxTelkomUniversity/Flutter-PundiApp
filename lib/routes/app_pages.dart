@@ -1,4 +1,8 @@
 import 'package:get/get.dart';
+import 'package:pundi_apps/ui/wallet/dana_otp_page.dart';
+import 'package:pundi_apps/ui/wallet/dana_page.dart';
+import 'package:pundi_apps/ui/wallet/dana_pin_page.dart';
+import 'package:pundi_apps/ui/wallet/wallet_page.dart';
 import 'package:pundi_apps/ui/wait/wait_page.dart';
 import 'package:pundi_apps/ui/activity/activity_page.dart';
 import 'package:pundi_apps/ui/home/home_page.dart';
@@ -18,7 +22,7 @@ import '../ui/main/main_page.dart';
 part 'app_routes.dart';
 
 class AppPages {
-  static const initial = Routes.register;
+  static const initial = Routes.splash;
 
   static final routes = [
     GetPage(
@@ -64,6 +68,14 @@ class AppPages {
     GetPage(
       name: Routes.dana,
       page: () => const DanaPage(),
+    ),
+    GetPage(
+      name: Routes.danaPin,
+      page: () => const DanaPinPage(),
+    ),
+    GetPage(
+      name: Routes.danaOtp,
+      page: () => const DanaOTPPAge(),
     ),
     GetPage(
       name: Routes.send,

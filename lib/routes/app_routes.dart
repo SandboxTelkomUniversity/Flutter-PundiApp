@@ -11,6 +11,8 @@ abstract class Routes {
   static const String profile = '/profile';
   static const String wallet = '/wallet';
   static const String dana = '/dana';
+  static const String danaPin = '/danaPin';
+  static const String danaOtp = '/danaOtp';
   static const String send = '/send';
   static const String nominal = '/nominal';
   static const String method = '/method';

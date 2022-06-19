@@ -3,13 +3,18 @@ import 'package:pundi_apps/ui/wallet/dana_otp_page.dart';
 import 'package:pundi_apps/ui/wallet/dana_page.dart';
 import 'package:pundi_apps/ui/wallet/dana_pin_page.dart';
 import 'package:pundi_apps/ui/wallet/wallet_page.dart';
+import 'package:pundi_apps/ui/wait/wait_page.dart';
 import 'package:pundi_apps/ui/activity/activity_page.dart';
 import 'package:pundi_apps/ui/home/home_page.dart';
 import 'package:pundi_apps/ui/login/login_page.dart';
+import 'package:pundi_apps/ui/method/method_page.dart';
 import 'package:pundi_apps/ui/onboarding/onboarding_page.dart';
 import 'package:pundi_apps/ui/profile/profile_page.dart';
 import 'package:pundi_apps/ui/register/register_page.dart';
+import 'package:pundi_apps/ui/send/send_nominal_page.dart';
+import 'package:pundi_apps/ui/send/send_page.dart';
 import 'package:pundi_apps/ui/splashscreen/splash_screen_page.dart';
+import 'package:pundi_apps/ui/wallet/dana_page.dart';
 import 'package:pundi_apps/ui/wallet/wallet_page.dart';
 
 import '../ui/main/main_page.dart';
@@ -71,6 +76,22 @@ class AppPages {
     GetPage(
       name: Routes.danaOtp,
       page: () => const DanaOTPPAge(),
+    ),
+    GetPage(
+      name: Routes.send,
+      page: () => const SendPage(),
+    ),
+    GetPage(
+      name: Routes.nominal,
+      page: () => const SendNominalPage(),
+    ),
+    GetPage(
+      name: Routes.method,
+      page: () => const MethodPage(),
+    ),
+    GetPage(
+      name: Routes.wait,
+      page: () => const WaitPage(),
     ),
   ];
 }

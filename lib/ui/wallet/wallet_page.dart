@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:pundi_apps/routes/app_pages.dart';
 import 'package:pundi_apps/shared/theme.dart';
 
 class WalletPage extends StatelessWidget {
@@ -127,35 +129,40 @@ class WalletPage extends StatelessWidget {
                               SizedBox(
                                 height: 20,
                               ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Row(
-                                    children: [
-                                      Image.asset(
-                                        'assets/bitmap/dana_icon.png',
-                                        width: 24,
-                                      ),
-                                      SizedBox(
-                                        width: 12,
-                                      ),
-                                      Text(
-                                        'Dana',
-                                        style: AppText.textMedium.copyWith(
-                                          fontWeight: AppText.semiBold,
-                                          fontSize: 14,
-                                          color: AppColor.black,
+                              GestureDetector(
+                                onTap: () {
+                                  Get.toNamed(Routes.dana);
+                                },
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Image.asset(
+                                          'assets/bitmap/dana_icon.png',
+                                          width: 24,
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  Icon(
-                                    Icons.keyboard_arrow_right_rounded,
-                                    color: AppColor.orange,
-                                    size: 40,
-                                  ),
-                                ],
+                                        SizedBox(
+                                          width: 12,
+                                        ),
+                                        Text(
+                                          'Dana',
+                                          style: AppText.textMedium.copyWith(
+                                            fontWeight: AppText.semiBold,
+                                            fontSize: 14,
+                                            color: AppColor.black,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Icon(
+                                      Icons.keyboard_arrow_right_rounded,
+                                      color: AppColor.orange,
+                                      size: 40,
+                                    ),
+                                  ],
+                                ),
                               ),
                               SizedBox(
                                 height: 20,

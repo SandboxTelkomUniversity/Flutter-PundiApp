@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:pundi_apps/shared/theme.dart';
+
+import '../../routes/app_pages.dart';
 
 class DanaPage extends StatelessWidget {
   const DanaPage({Key? key}) : super(key: key);
@@ -13,7 +16,12 @@ class DanaPage extends StatelessWidget {
         height: 24,
         child: Row(
           children: [
-            SvgPicture.asset('assets/vector/ic_cross.svg'),
+            InkWell(
+              onTap: () {
+                Get.back();
+              },
+              child: SvgPicture.asset('assets/vector/ic_cross.svg'),
+            ),
             SizedBox(
               width: 16,
             ),
@@ -239,12 +247,17 @@ class DanaPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(7),
               ),
               child: Center(
-                child: Text(
-                  'Lanjutkan',
-                  style: AppText.textMedium.copyWith(
-                      color: AppColor.white,
-                      fontWeight: AppText.semiBold,
-                      fontSize: 16),
+                child: GestureDetector(
+                  onTap: () {
+                    Get.offAllNamed(Routes.main);
+                  },
+                  child: Text(
+                    'Lanjutkan',
+                    style: AppText.textMedium.copyWith(
+                        color: AppColor.white,
+                        fontWeight: AppText.semiBold,
+                        fontSize: 16),
+                  ),
                 ),
               ),
             )
